@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>All Datasheet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+	<!-- The overlay -->
+	<div id="myNav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav('0')">&times;</a>
+		<div class="overlay-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-8 col-lg-6 mx-auto">
+						<div class="card border border-dark">
+							<div id="cardHeader" class="card-header">
+								<ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+									<li class="nav-item w-50">
+										<span class="nav-link active" onclick="logOreg(0)" role="tab" id="l" aria-selected="true">Login</span>
+									</li>
+									<li class="nav-item w-50">
+										<span class="nav-link"  onclick="logOreg(1)" role="tab" id="r" aria-selected="false">Register</span>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body" id="cardBody">
+								<h4 class="card-title"><i class="fas fa-3x fa-users"></i></h4>
+								<div class="tab-content mt-3">
+									<div class="tab-pane active" id="logedin" role="tabpanel">
+										<form class='mx-auto' action='./PHP/login.php' id='login-form' method='post'><input id='usernameL' type='text' class='input' name='unameL' placeholder='ENTER YOUR USERNAME' required><div class='line-box'><div class='line'></div></div><input id='passwordL' type='password' class='input' name='pswL' placeholder='ENTER YOUR PASSWORD' required><div class='line-box'><div class='line'></div></div><button type='submit' name='create' id='login-btn'>submit</button></form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- START nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container-fluid px-md-4	">
+			<a class="navbar-brand" href="index.html">All Datasheet</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="index.html#features" class="nav-link">Features</a></li>
+					<li class="nav-item"><a href="index.html#contect" class="nav-link">Contect</a></li>
+					<li class="nav-item">
+						<span class="login" id="usernameBtn" onclick="openNav()">LOGIN</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+
+	<!-- START header -->
+	<div class="hero-wrap img"  id="carousel" style="background-image: url(images/bg_1.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center">
+				<div class="col-md-10 d-flex align-items-center ftco-animate">
+					<div class="text text-center mx-auto pt-5 mt-md-5">
+						<!-- Heading -->
+						<p class="mb-4">Find component, companies, and devices,</p>
+						<h1 class="mb-5">The Eassiest Way to Get Datasheets.</h1>
+						<!-- counter -->
+						<div class="ftco-counter ftco-no-pt ftco-no-pb">
+							<div class="row">
+								<div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18">
+										<div class="text d-flex">
+											<div class="icon mr-3 py-2 text-white">
+												<i class="fas fa-car-battery fa-3x"></i>
+											</div>
+											<div class="desc text-left">
+												<strong class="number" data-number="48">0</strong>
+												<span>Component</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18 text-center">
+										<div class="text d-flex">
+											<div class="icon mr-3 py-2 text-white">
+												<i class="far fa-file-excel fa-3x"></i>
+											</div>
+											<div class="desc text-left">
+												<strong class="number" data-number="100">0</strong>
+												<span>Datasheets</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+									<div class="block-18 text-center">
+										<div class="text d-flex">
+											<div class="icon mr-3 py-2 text-white">
+												<i class="fas fa-database fa-3x"></i>
+											</div>
+											<div class="desc text-left">
+												<strong class="number" data-number="10000">0</strong>
+												<span>Data lines</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Search -->
+						<div class="ftco-search my-md-5">
+							<div class="row">
+								<div class="col-md-12 tab-wrap">
+									<div class="tab-content p-4" id="v-pills-tabContent">
+										<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+											<form action="#" class="search-job">
+												<div class="row no-gutters">
+													<div class="col-md mr-md-2">
+														<div class="form-group">
+															<div class="form-field">
+																<div class="icon"><i class="fas fa-sort-amount-down"></i></div>
+																<input type="text" class="form-control" placeholder="Model No.">
+															</div>
+														</div>
+													</div>
+													<div class="col-md mr-md-2">
+														<div class="form-group">
+															<div class="form-field">
+																<div class="select-wrap">
+																	<div class="icon"><i class="fas fa-chevron-down"></i></div>
+																	<select name="" id="" class="form-control">
+																		<option value="">Device</option>
+																		<option value="">Transistor</option>
+																		<option value="">Diode</option>
+																		<option value="">Capacitor</option>
+																		<option value="">Condenser</option>
+																		<option value="">Inductor</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md mr-md-2">
+														<div class="form-group">
+															<div class="form-field">
+																<div class="icon"><i class="fas fa-industry"></i></div>
+																<input type="text" class="form-control" placeholder="Manufacturer">
+															</div>
+														</div>
+													</div>
+													<div class="col-md">
+														<div class="form-group">
+															<div class="form-field">
+																<button type="submit" class="form-control btn btn-primary" onclick="underdevelop()">Search Datasheet</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END header -->
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="category-wrap">
+						<div class="row no-gutters">
+							<div class="col-sm-6 col-md-4 col-lg-2">
+								<div class="top-category text-center no-border-left">
+									<h3><a href="#">Components</a></h3>
+									<img src="./images/basic.png" width="75px" height="75px" class="my-2"  />
+									<p>300 data</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-2">
+								<div class="top-category text-center">
+									<h3><a href="#">IC's</a></h3>
+									<img src="./images/ic.png" width="75px" height="75px" class="my-2"  />
+									<p>300 data</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-2">
+								<div class="top-category text-center">
+									<h3><a href="#">Ports</a></h3>
+									<img src="./images/port.png" width="75px" height="75px" class="my-2"  />
+									<p>300 data</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-2">
+								<div class="top-category text-center">
+									<h3><a href="#">Arduino</a></h3>
+									<img src="./images/arduino.png" width="75px" height="75px" class="my-2"  />
+									<p>300 data</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-2">
+								<div class="top-category text-center">
+									<h3><a href="#">Power Supply</a></h3>
+									<img src="./images/power.png" width="75px" height="75px" class="my-2"  />
+									<p>300 data</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-2">
+								<div class="top-category text-center">
+									<h3><a href="#">More</a></h3>
+									<img src="./images/more.png" width="75px" height="75px" class="my-2"  />
+									<p>.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--START features -->
+	<section id="features" class="ftco-section testimony-section">
+		<div class="container">
+			<div class="row justify-content-center mb-4">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="text-primary">Features</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="card">
+								<img class="card-img-top" src="./images/bg_1.jpg" alt="Component image">
+								<div class="card-img-overlay">
+									<h4 class="card-title text-white">Basic Components</h4>
+									<a href="./pages/component.html" target="_blank" class="card-btn btn btn-primary mr-3 mb-3">See More</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<img class="card-img-top" src="./images/ic.jpeg" alt="IC image">
+								<div class="card-img-overlay">
+									<h4 class="card-title text-white">Integrated Circuits</h4>
+									<a href="./pages/ic.html" target="_blank" class="card-btn btn btn-primary mr-3 mb-3">See More</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<img class="card-img-top" src="./images/port.jpg" alt="Port image">
+								<div class="card-img-overlay">
+									<h4 class="card-title text-white">Ports</h4>
+									<a href="./pages/port.html" target="_blank" class="card-btn btn btn-primary mr-3 mb-3">See More</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<img class="card-img-top" src="./images/arduino.jpg" alt="Arduino image">
+								<div class="card-img-overlay">
+									<h4 class="card-title text-white">Arduino</h4>
+									<a href="./pages/arduino.html" target="_blank" class="card-btn btn btn-primary mr-3 mb-3">See More</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<img class="card-img-top" src="./images/power.jpg" alt="Power Supply image">
+								<div class="card-img-overlay">
+									<h4 class="card-title text-white">Power Supply</h4>
+									<a href="./pages/power.html" target="_blank" class="card-btn btn btn-primary mr-3 mb-3">See More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END features -->
+
+
+
+	<!------------ NEWS LETTER --------------->
+	<section id="contect" class="ftco-section-parallax">
+		<div class="parallax-img d-flex align-items-center">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+						<h2>Subcribe to our Newsletter</h2>
+						<p>
+							life is like a semiconductor, neither conductor, nor insulator...!! 
+							<br />
+							Click the Subscribe button to stay upadated with us :)
+						</p>
+						<div class="row d-flex justify-content-center mt-4 mb-4">
+							<div class="col-md-12">
+								<form action="#" class="subscribe-form">
+									<div class="form-group d-flex">
+										<input type="text" required class="form-control" placeholder="Enter email address">
+										<input type="submit" onclick="underdevelop()" value="Subscribe" class="submit px-3">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!------------ FOOTER --------------->
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Jai Hind</h2>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+							<li class="ftco-animate text-center"><a href="#" class="py-1"><i class="fab fa-twitter"></i></a></li>
+							<li class="ftco-animate text-center"><a href="#" class="py-1"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="ftco-animate text-center"><a href="#" class="py-1"><i class="fab fa-instagram"></i></a></li>
+							<li class="ftco-animate text-center"><a href="#" class="py-1"><i class="fab fa-whatsapp"></i></a></li>
+							<li class="ftco-animate text-center"><a href="#" class="py-1"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Account</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="pb-1 d-block">My Account</a></li>
+							<li><a href="#" class="pb-1 d-block">Sign In</a></li>
+							<li><a href="#" class="pb-1 d-block">Create Account</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li>
+									<a href="https://www.google.com/maps/place/Thakur+College+of+Engineering+and+Technology/@19.2059968,72.8745635,15z/data=!4m2!3m1!1s0x0:0xc0aec329c82d3555?sa=X&ved=2ahUKEwjku7Tqh_DqAhUCzjgGHVgzC10Q_BIwH3oECCQQCA">
+										<i class="ml-5 mr-3 fas fa-map-marker-alt"></i>
+										<span class="text">Thakur College, Kandivali, Mumbai - 400097.</span>
+									</a>
+								</li>
+								<li>
+									<a href="tel: 9845778459">
+										<i class="ml-5 mr-3 fas fa-phone-alt"></i>
+										<span class="text">+91 98243 23020</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto: abc@example.com">
+										<i class="ml-5 mr-3 far fa-envelope"></i>
+										<span class="text">thakur@collge.com</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!------------ LOADER --------------->
+	<div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+		</svg>
+	</div>
+
+
+	<!------------ JAVASCRIPT --------------->
+	<!-- Bootstrap Script -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- Jquery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Add ons -->
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Main.js -->
+	<script src="js/main.js"></script>
+	<script src="js/login.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script>
+		var navbar = document.getElementById('ftco-navbar');
+		function underdevelop() {
+			alert("Sorry, This feature is underdevelopment....")
+		}
+		function openNav() {
+			navbar.classList.add('invisible');
+			document.getElementById("myNav").style.width = "100%";
+			document.body.style.overflow = 'hidden';
+		}
+		function closeNav(name) {
+			navbar.classList.remove('invisible');
+			document.getElementById("myNav").style.width = "0%";
+			document.body.style.overflow = 'visible';
+			if ( name != "0" ) {
+				var btn = document.getElementById('usernameBtn');
+				btn.innerHTML = name.substring(0, 8);
+			}
+		}
+		$(function(){
+			$('#login-btn').click(function(e){
+				var valid = this.form.checkValidity();
+				if(valid){
+					var username	= $('#usernameL').val();
+					var password 	= $('#passwordL').val();
+					e.preventDefault();	
+					$.ajax({
+        	type: 'POST',
+        	url: './PHP/validLogin.php',
+        	data: {username: username, password: password},
+        	success: function(data){
+				Swal.fire( data )
+				if (data.substring(1,data.length) == "You Have Successfully Logged in") { 
+					closeNav(username); 
+				}
+        	  $('#login-form')[0].reset();
+			}
+        });	
+	}
+});		
+});
+</script>
+
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/c1d28c00bc.js"></script>
+</body>
+</html>

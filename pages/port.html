@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ports</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+</head>
+<body>
+	<div class="container">	
+		<header class="clearfix" style="background-image: linear-gradient( rgba(0,0,255,0.7), rgba(0,0,255,0.7) ), url('../images/port.jpg')">
+			<h1>
+				<strong>
+					Port <span>Ports are slots on the motherboard into which a cable of external device is plugged in.</span>
+				</strong>
+			</h1>	
+		</header>
+		<div class="main">
+			<p id="para">In computer hardware, a port serves as an interface between the computer and other devices. In computer terms, a port generally refers to part of a computing device available for connection to peripherals such as i/o devices. Computer ports have many uses, to connect a monitor, webcam, speakers, or other peripheral devices.A computer port is a specialized outlet on a piece of equipment to which a plug or cable connects. In the past, unreliable connectors have been the source of many electrical problems. Connectors have to be waterproof (modern connectors have several seals to keep out moisture), corrosion proof and provide good electrical contact for the life of the vehicle.</p>
+			<div class="side">
+				<nav class="dr-menu">
+					<div class="dr-trigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label" onclick="changeText(0)" >Types</a></div>
+					<ul>
+						<li><a href="#" onclick="changeText(1)">Car Audio Port</a></li>
+						<li><a href="#" onclick="changeText(2)">Ether Port</a></li>
+						<li><a href="#" onclick="changeText(3)">HDMI Connector Port</a></li>
+						<li><a href="#" onclick="changeText(4)">Jack Connector Port</a></li>
+						<li><a href="#" onclick="changeText(5)">Midi Connector Port</a></li>
+						<li><a href="#" onclick="changeText(6)">Parallel Port</a></li>
+						<li><a href="#" onclick="changeText(7)">Registered Port</a></li>
+						<li><a href="#" onclick="changeText(8)">Scart Connector Port</a></li>
+						<li><a href="#" onclick="changeText(9)">Serial Port</a></li>
+						<li><a href="#" onclick="changeText(10)">USB Port</a></li>
+						<li><a href="#" onclick="changeText(11)">VGA Connector Port</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div><!-- /container -->
+
+	<script src="../js/modernizr.custom.js"></script>
+	<script src="../js/ytmenu.js"></script>
+	<script>
+		function changeText(index) {
+				var paraText = [
+					'In computer hardware, a port serves as an interface between the computer and other devices. In computer terms, a port generally refers to part of a computing device available for connection to peripherals such as i/o devices. Computer ports have many uses, to connect a monitor, webcam, speakers, or other peripheral devices.A computer port is a specialized outlet on a piece of equipment to which a plug or cable connects. In the past, unreliable connectors have been the source of many electrical problems. Connectors have to be waterproof (modern connectors have several seals to keep out moisture), corrosion proof and provide good electrical contact for the life of the vehicle.' , 
+					'Connectors are critical to todays cars. Without them, it would be nearly impossible to build or service a car. Whenever a bundle of wires passes through or attaches to a component of the car that might have to be removed, there must be a connector there to allow for that removal. A single connector can have more than 100 wires. The shell is an intricate piece that has a complicated shape. There is a locking clip on the outside that holds the two halves of the connector together. There are holes for the pins, and there are special barbs that lock the pins in place once they are inserted. All of these features are molded into the piece when it is made. Here is link for <a href="https://drive.google.com/file/d/1gt1XEScqDGVg8vY1ToWWoo_5cgYrYcsV/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'EtherChannel is a port link aggregation technology or port-channel architecture used primarily on Cisco switches. It allows grouping of several physical Ethernet links to create one logical Ethernet link for the purpose of providing fault-tolerance and high-speed links between switches, routers and servers. An EtherChannel can be created from between two and eight active Fast, Gigabit or 10-Gigabit Ethernet ports, with an additional one to eight inactive (failover) ports which become active as the other active ports fail. EtherChannel is primarily used in the backbone network, but can also be used to connect end user machines. Here is link for <a href="https://drive.google.com/file/d/1xXedK8-y5Frl3C9QwA7wWzrf0pqlZvt6/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'HDMI implements the EIA/CEA-861 standards, which define video formats and waveforms, transport of compressed and uncompressed LPCM audio, auxiliary data, and implementations of the VESA EDID.(p. III) CEA-861 signals carried by HDMI are electrically compatible with the CEA-861 signals used by the Digital Visual Interface (DVI). No signal conversion is necessary, nor is there a loss of video quality when a DVI-to-HDMI adapter is used.(§C) The CEC (Consumer Electronics Control) capability allows HDMI devices to control each other when necessary and allows the user to operate multiple devices with one handheld remote control device.  Here is link for <a href="https://drive.google.com/file/d/1mV4GY_b5eKCavlsblh1qCNS6pvkjgR4G/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'The Jack connector is cylindrical in shape, with a grooved tip to retain it. In its original audio configuration, it typically has two, three, four and, occasionally, five contacts. Three-contact versions are known as TRS connectors, where T stands for "tip", R stands for "ring" and S stands for "sleeve". Ring contacts are typically the same diameter as the sleeve, the long shank. Similarly, two-, four- and five- contact versions are called TS, TRRS and TRRRS connectors respectively. The outside diameter of the "sleeve" conductor is 6.35 millimetres (1⁄4 inch). The "mini" connector has a diameter of 3.5 mm (0.14 in). Here is link for <a href="https://drive.google.com/file/d/1FwZaPvYtwB1lxDVrh7JuhLBeX1CTlzMg/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'MIDI (an acronym for Musical Instrument Digital Interface) is a technical standard that describes a communications protocol, digital interface, and electrical connectors that connect a wide variety of electronic musical instruments, computers, and related audio devices for playing, editing and recording music. The specification originates in a paper published by Dave Smith and Chet Wood then of Sequential Circuits at the October 1981 Audio Engineering Society conference in New York City then titled Universal Synthesizer Interface. A single MIDI link through a MIDI cable can carry up to sixteen channels of information, each of which can be routed to a separate device or instrument. Here is link for <a href="https://drive.google.com/file/d/11kYjdpDy9w9z-rD_5Bndh8mPxPmjGG2B/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'A parallel port is a type of interface found on computers (personal and otherwise) for connecting peripherals. The name refers to the way the data is sent; parallel ports send multiple bits of data at once, as opposed to serial interfaces that send bits one at a time. To do this, parallel ports require multiple data lines in their cables and port connectors and tend to be larger than contemporary serial ports which only require one data line. There are many types of parallel ports, but the term has become most closely associated with the printer port or Centronics port found on most personal computers from the 1970s through the 2000s. Here is link for <a href="https://drive.google.com/file/d/1HJIJDeUlAI0JFV1yIcv25QEcens2wptc/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'A registered port is a network port (a sub-address defined within the Internet Protocol, in the range 1024–49151) assigned by the Internet Assigned Numbers Authority (IANA) (or by Internet Corporation for Assigned Names and Numbers (ICANN) before March 21, 2001,[1] or by USC/ISI before 1998) for use with a certain protocol or application. Ports with numbers 0–1023 are called system or well-known ports; ports with numbers 1024-49151 are called user or registered ports, and ports with numbers 49152-65535 are called dynamic and/or private ports. Both system and user ports are used by transport protocols (TCP, UDP, DCCP, SCTP) to indicate an application or service. Here is link for <a href="https://drive.google.com/file/d/1E9IA317v_mpwk1nZbdtKLWI4kfSesn4H/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'SCART (also known as Péritel or Péritélévision, especially in France, 21-pin EuroSCART in marketing by Sharp in Asia, Euroconector in Spain, EuroAV or EXT, or EIA Multiport in the United States, as an EIA interface) is a French-originated standard and associated 21-pin connector for connecting audio-visual (AV) equipment. The name SCART comes from Syndicat des Constructeurs dAppareils Radiorécepteurs et Téléviseurs, Radio and Television Receiver Manufacturers Association, the French organisation that created the connector in the mid-1970s. The related European standard EN 50049 has been then refined and published in 1978 by CENELEC, calling it peritelevision. Here is link for <a href="https://drive.google.com/file/d/1Oy50sJnTh2DymgWCywerjUFV_mQeicpp/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'In computing, a serial port is a serial communication interface through which information transfers in or out sequentially one bit at a time. This is in contrast to a parallel port which communicates multiple bits simultaneously in parallel. Throughout most of the history of personal computers, data was transferred through serial ports to devices such as modems, terminals, and various peripherals. While such interfaces as Ethernet, FireWire, and USB all send data as a serial stream, the term serial port usually identifies hardware compliant to the RS-232 standard or similar and intended to interface with a modem or with a similar communication device. Here is link for <a href="https://drive.google.com/file/d/1aOzC5_nec14nQ_BTW-L7-nmxY-mLCZBN/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'A USB port is a standard cable connection interface for personal computers and consumer electronics devices. USB stands for Universal Serial Bus, an industry standard for short-distance digital data communications. USB ports allow USB devices to be connected to each other with and transfer digital data over USB cables. Universal Serial Bus (USB) is an industry standard that establishes specifications for cables and connectors and protocols for connection, communication and power supply. A broad variety of USB hardware exists, including several different connectors, of which USB-C is the most recent. Here is link for <a href="https://drive.google.com/file/d/1RKFcgX_fXPtPT0kqqNQT6hAgcWUjohEV/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+					'A Video Graphics Array (VGA) connector is a three-row 15-pin DE-15 connector. The 15-pin VGA connector was provided on many video cards, computer monitors, laptop computers, projectors, and high definition television sets. On laptop computers or other small devices, a mini-VGA port was sometimes used in place of the full-sized VGA connector. VGA connectors and cables carry analog component RGBHV (red, green, blue, horizontal sync, vertical sync) video signals, and VESA Display Data Channel (VESA DDC) data. The original IBM PS/2 defined different signals assignments. The IBM 8513 monitor defined pin 5 as Self Test. Here is link for <a href="https://drive.google.com/file/d/1RKFcgX_fXPtPT0kqqNQT6hAgcWUjohEV/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>'
+				];
+				document.getElementById('para').innerHTML = paraText[index];
+			}
+	</script>
+</body>
+</html>

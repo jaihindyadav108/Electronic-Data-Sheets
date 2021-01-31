@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basic Components</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+</head>
+<body>
+	<div class="container">	
+		<header class="clearfix" style="background-image: linear-gradient( rgba(0,0,255,0.7), rgba(0,0,255,0.7) ), url('../images/bg_1.jpg')">
+			<h1>
+				<strong>
+					Basic Component <span>An electronic component is a physical entity in electronic system used to affect electrons.</span>
+				</strong>
+			</h1>	
+		</header>
+		<div class="main">
+			<p id="para">The world of electronic components can be summarized with a short list of items. Here are more details on these essential parts of modern electronics.Electronic components have a number of electrical terminals or leads. Basic electronic components may be packaged discretely, as arrays or networks of like components, or integrated inside of packages such as semiconductor ic, hybrid integrated circuits, or thick film devices.</p>
+			<div class="side">
+				<nav class="dr-menu">
+					<div class="dr-trigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label" onclick="changeText(0)" >Types</a></div>
+					<ul>
+						<li><a href="#" onclick="changeText(1)">Resistor</a></li>
+						<li><a href="#" onclick="changeText(2)">Capacitor</a></li>
+						<li><a href="#" onclick="changeText(3)">Inductor</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div><!-- /container -->
+
+	<script src="../js/modernizr.custom.js"></script>
+	<script src="../js/ytmenu.js"></script>
+	<script>
+	function changeText(index) {
+			var paraText = [
+				'The world of electronic components can be summarized with a short list of items. Here are more details on these essential parts of modern electronics.Electronic components have a number of electrical terminals or leads. Basic electronic components may be packaged discretely, as arrays or networks of like components, or integrated inside of packages such as semiconductor ic, hybrid integrated circuits, or thick film devices.' , 
+				'A resistor is passive two-terminal electrical component that implements electrical resistance as a circuit element. In electronic circuits, they are used to reduce current flow, adjust signal levels, to divide voltages, bias active elements, and terminate transmission lines, among other uses. Resistors that can dissipate many watts of electrical power, used as part of motor controls, in power distribution, or test loads for generators. Here is link for <a href="https://drive.google.com/file/d/1P8Cajbx_cbTI1Nv_XWXOOoYbGTppFifa/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' ,
+				'A capacitor is a device that stores electrical energy in an electric field. It is a passive electronic component with two terminals.The effect of a capacitor is known as capacitance. While some capacitance exists between any two electrical conductors in proximity in a circuit, a capacitor is a component designed to add capacitance to a circuit. It also known as condenser microphones, also called capacitor microphones. Here is link for <a href="https://drive.google.com/file/d/1k3Dwwg5D5BuMbCsTgxxhA5aOsY8quaHK/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' , 
+				'An inductor is a passive two-terminal electrical component that stores energy in a magnetic field when electric current flows through it. An inductor typically consists of an insulated wire wound into a coil around a core. According to Lenzs law, the induced voltage has a polarity which opposes the change in current that created it. Thus, inductors oppose any changes in current through them. Here is link for <a href="https://drive.google.com/file/d/1Dmqkoio8HlPV5h-EX4Ev5ITwoOw2GlTg/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' ];
+			document.getElementById('para').innerHTML = paraText[index];
+		}
+	</script>
+
+</body>
+</html>

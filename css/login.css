@@ -1,0 +1,120 @@
+/* The Overlay (background) */
+#myNav {
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+	height: 100%;
+	width: 0;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+	position: relative;
+	top: 25%; /* 25% from the top */
+	width: 100%; /* 100% width */
+	text-align: center; /* Centered text/links */
+	margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  #myNav a {
+	padding: 8px;
+	text-decoration: none;
+	color: #000;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  #myNav a:hover, #myNav a:focus {
+	color: #f00;
+  }
+  
+  /* Position the close button (top right corner) */
+  #myNav .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+	#myNav .closebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+	}
+  }
+  .label-txt {
+	position: absolute;
+	top: -1.6em;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: .8em;
+	letter-spacing: 1px;
+	color: rgb(120,120,120);
+	transition: ease .3s;
+  }
+  .input {
+	margin-top: 5px;
+	width: 100%;
+	padding: 10px;
+	background: transparent;
+	border: none;
+	outline: none;
+  }
+  
+  .line-box {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background: #BCBCBC;
+  }
+  
+  .line {
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: blue;
+	transition: ease .6s;
+  }
+  
+  .input:focus + .line-box .line {
+	width: 100%;
+  }
+  
+  .label-active {
+	top: -3em;
+  }
+  
+  #login-btn, #register-btn {
+	display: inline-block;
+	padding: 5px 10px;
+	background: blue;
+	font-weight: bold;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: ease .3s;
+  }
+  
+  #login-btn:hover, #register-btn:hover {
+	background: #8BC34A;
+	color: #000;
+  }
+  
+#cardHeader {
+	background-color: #00f;
+}

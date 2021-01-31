@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Arduino</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+</head>
+<body>
+	<div class="container">	
+	<header class="clearfix" style="background-image: linear-gradient( rgba(0,0,255,0.7), rgba(0,0,255,0.7) ), url('../images/arduino.jpg')">
+			<h1>
+				<strong>
+					Arduino <span>It is a microcontroller built onto a single printed circuit board.</span>
+				</strong>
+			</h1>	
+		</header>
+		<div class="main">
+			<p id="para">A single-board microcontroller is a microcontroller built onto a single printed circuit board. This board provides all of the circuitry necessary for a useful control task: a microprocessor, I/O circuits, a clock generator, RAM, stored program memory and any necessary support ICs. The intention is that the board is immediately useful to an application developer, without requiring them to spend time and effort to develop controller hardware.</p>
+			<div class="side">
+				<nav class="dr-menu">
+					<div class="dr-trigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label" onclick="changeText(0)" >Types</a></div>
+					<ul>
+						<li><a href="#" onclick="changeText(1)">Arduino</a></li>
+						<li><a href="#" onclick="changeText(2)">Raspbeery Pi</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div><!-- /container -->
+
+	<script src="../js/modernizr.custom.js"></script>
+	<script src="../js/ytmenu.js"></script>
+	<script>
+	function changeText(index) {
+			var paraText = [
+				'A single-board microcontroller is a microcontroller built onto a single printed circuit board. This board provides all of the circuitry necessary for a useful control task: a microprocessor, I/O circuits, a clock generator, RAM, stored program memory and any necessary support ICs. The intention is that the board is immediately useful to an application developer, without requiring them to spend time and effort to develop controller hardware.' , 
+				'Arduino is an open-source hardware and software company, project and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices. Its hardware products are licensed under a CC-BY-SA license, permitting the manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially. Here is link for <a href="https://drive.google.com/file/d/1Mqaxzo0jB8pOlCSE58Z7Owe5JoeLp8pF/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' ,
+				'The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries. The original model became far more popular than anticipated, selling outside its target market. It is now widely used even in research projects, such as for weather monitoring. Here is link for <a href="https://drive.google.com/file/d/1hL6vNJNaLrc1HZ0DF2fcVbWolre7p3V7/view?usp=sharing" target="_blank" style="color:#00f">datasheet.</a>' ];
+			document.getElementById('para').innerHTML = paraText[index];
+		}
+	</script>
+
+</body>
+</html>

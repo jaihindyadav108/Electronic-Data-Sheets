@@ -1,0 +1,25 @@
+
+#carousel{
+	transition: 1000ms ease; }
+
+.card-btn {
+	position: absolute;
+	bottom: 0;
+	right: 0; }
+
+.card-img-overlay {
+	background-color: rgba(0, 0, 0, 0.3); }
+
+.login {
+	display: block;
+	margin: 5px auto;
+	padding: 10px 20px;
+	background-color: blue;
+	border-radius: 25px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.login, #l, #r {
+	cursor: pointer;
+}
